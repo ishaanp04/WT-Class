@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .row {
+        width: 100%;
+    }
+    @media (min-width: 1200px){
+        .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+            float: left;
+        }
+        .col-lg-1 {
+            width: 8.33%;
+        }
+        .col-lg-2 {
+            width: 16.66%;
+        }
+        .col-lg-3 {
+            width: 25%;
+        }
+        .col-lg-4 {
+            width: 33.33%;
+        }
+        .col-lg-5 {
+            width: 41.66%;
+        }
+        .col-lg-6 {
+            width: 50%;
+        }
+        .col-lg-7 {
+            width: 58.33%;
+        }
+        .col-lg-8 {
+            width: 66.66%;
+        }
+        .col-lg-9 {
+            width: 75%;
+        }
+        .col-lg-10 {
+            width: 83.33%;
+        }
+        .col-lg-11 {
+            width: 91.66%;
+        }
+        .col-lg-12 {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 850px) and (max-width: 1199px) {
+        .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+            float: left;
+        }
+        .col-md-1 {
+            width: 8.33%;
+        }
+        .col-md-2 {
+            width: 16.66%;
+        }
+        .col-md-3 {
+            width: 25%;
+        }
+        .col-md-4 {
+            width: 33.33%;
+        }
+        .col-md-5 {
+            width: 41.66%;
+        }
+        .col-md-6 {
+            width: 50%;
+        }
+        .col-md-7 {
+            width: 58.33%;
+        }
+        .col-md-8 {
+            width: 66.66%;
+        }
+        .col-md-9 {
+            width: 75%;
+        }
+        .col-md-10 {
+            width: 83.33%;
+        }
+        .col-md-11 {
+            width: 91.66%;
+        }
+        .col-md-12 {
+            width: 100%;
+        }
+    }
+    @media (min-width: 500px) and (max-width: 849px) {
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+            float: left;
+        }
+        .col-sm-1 {
+            width: 8.33%;
+        }
+        .col-sm-2 {
+            width: 16.66%;
+        }
+        .col-sm-3 {
+            width: 25%;
+        }
+        .col-sm-4 {
+            width: 33.33%;
+        }
+        .col-sm-5 {
+            width: 41.66%;
+        }
+        .col-sm-6 {
+            width: 50%;
+        }
+        .col-sm-7 {
+            width: 58.33%;
+        }
+        .col-sm-8 {
+            width: 66.66%;
+        }
+        .col-sm-9 {
+            width: 75%;
+        }
+        .col-sm-10 {
+            width: 83.33%;
+        }
+        .col-sm-11 {
+            width: 91.66%;
+        }
+        .col-sm-12 {
+            width: 100%;
+        }
+    }
+
+    body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .navbar {
+        background-color: rgb(193, 193, 198);
+        height: 50px;
+        width: 100%;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 1.2em;
+        background-image: linear-gradient(to bottom right, rgb(185, 184, 184), rgb(255, 255, 255));
+    }
+
+    .container {
+        margin-top: 5px;
+    }
+
+    .card {
+        border: 2px solid rgb(236, 236, 236);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 15px;
+        text-align: justify;
+        height:  225px;
+        overflow: auto;
+        scrollbar-width: thin;
+        background-image: linear-gradient(to bottom right, rgb(236, 236, 236), rgb(255, 255, 255));
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: brown;
+    }
+
+    .colors {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    img {
+        width: 300px;
+    }
+    
+    table {
+        border: 1px solid rgb(233, 233, 233);
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    th {
+        background-color: rgb(209, 202, 202);
+        border-radius: 3px;
+    }
+
+    div.form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <header>
+        <div class="navbar">h  e  l  l  o</div>
+    </header>
+
+    
+
+    <div class="container">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Paragraph</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, suscipit cum maxime consequuntur nam aliquid inventore repudiandae repellat? Aspernatur, ut!
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Links and lists</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/ishaanp04/">My github</a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/ishaanpishaan">My instagram</a>
+                    </li>
+                    <li>
+                        <div>Normal list item</div>
+                    </li>
+                    <li>
+                        <div>Filler</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Quotation</h3>
+                <blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
+                    The HTML &lt;blockquote&gt; element defines a section that is quoted from another source.
+                    Browsers usually indent this element.
+                </blockquote>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Formatting</h3>
+                <b>Bold</b>
+                <i>Italics</i>
+                <strong>Strong?<br></strong>
+                
+                <em>Emphasized</em>
+                <small>Small</small>
+                <del>Deleted<br></del>
+                <ins>Inserted</ins>
+                <sub>Subscript</sub>
+                <sup>Superscript</sup>
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Colors</h3>
+                <div class="colors" style="background-color: aquamarine;"></div>
+                <div class="colors" style="background-color: bisque;"></div>
+                <div class="colors" style="background-color: aqua;"></div>
+                <div class="colors" style="background-color: chocolate;"></div>
+                <div class="colors" style="background-color: crimson;"></div>
+                <div class="colors" style="background-color: violet;"></div>
+                <div class="colors" style="background-color: teal;"></div>
+                <div class="colors" style="background-color: seagreen;"></div>
+                <div class="colors" style="background-color: rebeccapurple;"></div>
+                <div class="colors" style="background-color: olive;"></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Image</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EFZwo7jYt7mHhHtHiNaVWjl9RddpSvfjAA&usqp=CAU" 
+                    alt="CAT IMAGE">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Table</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>State</th>
+                    </tr>
+                    <tr>
+                        <td>name1</td>
+                        <td>state1</td>
+                    </tr>
+                    <tr>
+                        <td>name2</td>
+                        <td>state2</td>
+                    </tr>
+                    <tr>
+                        <td>name3</td>
+                        <td>state3</td>
+                    </tr>
+                    <tr>
+                        <td>name4</td>
+                        <td>state4</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <h3>Iframe</h3>
+                <p>Song with crescendo buddies</p>
+                <iframe style="border-radius: 10px" src="https://open.spotify.com/embed/track/4cLICOrTdH6mgrpsz987WL?utm_source=generator&theme=0" width="100%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+
+    </div>
+</body>
+</html>
