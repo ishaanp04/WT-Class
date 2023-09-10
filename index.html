@@ -200,16 +200,14 @@
     }
 
     div.form {
-        margin-left: auto;
-        margin-right: auto;
+        padding: 15px;
+        clear: both;
     }
 </style>
 <body>
     <header>
         <div class="navbar">h  e  l  l  o</div>
     </header>
-
-    
 
     <div class="container">
         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -321,8 +319,30 @@
             </div>
         </div>
     </div>
+    
     <div class="form">
-
+        <h2>Form</h2>
+        <form id="form">
+            <label>Simple text field: &nbsp;</label>
+            <input type="text">
+            <button>Submit</button>
+            <br><br>
+            Simple radio input: &nbsp;
+            <input type="radio">
+            <label for="think">Yes</label>
+            <input type="radio" id="think" name="think">
+            <label for="think">No</label>
+            <br><br>            
+            <label for="remarks">Simple select options</label>
+            <select name="remarks" id="remarks">
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Bad</option>
+            </select>
+            <br><br>
+            <textarea name="final" id="final" cols="30" rows="5">Suggestions (text area)</textarea>
+        </form>
     </div>
 </body>
 </html>
